@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pro07-javaweb-begin:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/pro07_javaweb_begin_war</output-path>
+    <root id="archive" name="pro07-javaweb-begin_war.war">
+      <element id="artifact" artifact-name="pro07-javaweb-begin:war exploded" />
+    </root>
+  </artifact>
+</component>

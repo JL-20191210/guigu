@@ -3,15 +3,31 @@
  * @create 2022-03-15 16:22
  */
 public class test {
+    class Super {
+
+        int flag = 1;
+
+        Super() {
+            test();
+        }
+
+        void test() {
+            System.out.println("Super.test() flag=" + flag);
+        }
+    }
+    class Sub extends Super {
+
+        Sub(int i) {
+            flag = i;
+            System.out.println("Sub.Sub()flag=" + flag);
+        }
+        void test() {
+            System.out.println("Sub.test()flag=" + flag);
+        }
+    }
     public static void main(String[] args) {
-       for (int i = 1; i<10; i++){
-           if(i==5){
-               System.out.println("i=5");
-           }else if(i==6){
-               System.out.println("i=6");
-           }else{
-               System.out.println(i);
-           }
-       }
+        new test().new Sub(5);
+        boolean result = false;
+        System.out.println(result);
     }
 }
