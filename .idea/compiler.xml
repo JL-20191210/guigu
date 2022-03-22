@@ -12,6 +12,7 @@
     <bytecodeTargetLevel>
       <module name="demo01" target="1.8" />
       <module name="guigu" target="1.8" />
+      <module name="pro09-practice" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

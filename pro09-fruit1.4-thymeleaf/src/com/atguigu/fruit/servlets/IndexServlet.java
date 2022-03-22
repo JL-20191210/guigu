@@ -7,7 +7,6 @@ import com.atguigu.myssm.myspringmvc.ViewBaseServlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -19,6 +18,7 @@ import java.util.List;
 public class IndexServlet extends ViewBaseServlet {
     @Override
     public void doGet(HttpServletRequest request , HttpServletResponse response)throws IOException, ServletException {
+        System.out.println("运行了servlet");
         FruitDAO fruitDAO = new FruitDAOImpl();
         List<Fruit> fruitList = fruitDAO.getFruitList();
         //保存到session作用域

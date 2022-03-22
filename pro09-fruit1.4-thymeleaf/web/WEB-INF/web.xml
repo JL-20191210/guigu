@@ -12,6 +12,4 @@
         <param-name>view-suffix</param-name>
         <param-value>.html</param-value>
     </context-param>
-
-
 </web-app>

@@ -34,8 +34,13 @@
     </servlet>
     <servlet>
         <servlet-name>Demo08Servlet</servlet-name>
-        <servlet-class>com.atguigu.servlets.Demo01Servlet</servlet-class>
+        <servlet-class>com.atguigu.servlets.Demo08Servlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Demo09Servlet</servlet-name>
+        <servlet-class>com.atguigu.servlets.Demo09Servlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>Demo07Servlet</servlet-name>
         <url-pattern>/demo07</url-pattern>
@@ -67,5 +72,9 @@
     <servlet-mapping>
         <servlet-name>Demo08Servlet</servlet-name>
         <url-pattern>/demo08</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Demo09Servlet</servlet-name>
+        <url-pattern>/demo09</url-pattern>
     </servlet-mapping>
 </web-app>

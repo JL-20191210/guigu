@@ -9,9 +9,9 @@ import java.util.List;
 
 public abstract class BaseDAO<T> {
     public final String DRIVER = "com.mysql.jdbc.Driver" ;
-    public final String URL = "jdbc:mysql://localhost:3306/fruitdb?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+    public final String URL = "jdbc:mysql://localhost:3306/javaweb?useUnicode=true&characterEncoding=utf-8&useSSL=false";
     public final String USER = "root";
-    public final String PWD = "123456" ;
+    public final String PWD = "123123" ;
 
     protected Connection conn ;
     protected PreparedStatement psmt ;
@@ -221,5 +221,8 @@ public abstract class BaseDAO<T> {
             close(rs,psmt,conn);
         }
         return list ;
+    }
+
+    public static void main(String[] args) {
     }
 }
